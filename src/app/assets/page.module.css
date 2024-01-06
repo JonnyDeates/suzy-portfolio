@@ -1,0 +1,102 @@
+.main {
+  transition: opacity 0.5s ease;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+.intro {
+  display: flex;
+  align-items: inherit;
+  padding: 3rem 2rem 1rem 2rem;
+  min-height: 80vh;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-align: center;
+}
+.intro h1{
+  font-weight: 900;
+  /*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
+  font-size: 3.25rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  padding: 0;
+  border: 0;
+}
+.intro p {
+  font-size: 0.9rem;
+  font-style: italic;
+  text-align: center;
+  margin: 0 0 2rem 0;
+  font-family: "Merriweather", Georgia, serif;
+  font-weight: 300;
+  line-height: 2.375;
+}
+.content {
+  background-color: #ffffff;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 72rem;
+  z-index: 2;
+  color: black;
+}
+.content h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 0 0 1.5rem 0;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 900;
+}
+.project {
+  text-align: center;
+  padding: 4rem 2rem 2rem 2rem;
+  border-top: 0;
+  display: block;
+}
+.project p {
+  font-style: italic;
+  margin-top: 0;
+  text-align: center;
+  font-family: "Merriweather", Georgia, serif;
+  font-weight: 300;
+  color: #150f0f;
+}
+.project button {
+  width: 100%;
+  box-shadow: inset 0 0 0 2px #212931;
+  color: #212931;
+  border: unset;
+  background-color: unset;
+  height: 3.75rem;
+  line-height: 3.75rem;
+  cursor: pointer;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.project_image {
+  display: block;
+  margin: 2rem 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+.project_image img {
+  transition: scale 0.3s ease-in-out;
+}
+.project_image:hover img{
+  scale: 1.1;
+}
+@media (min-width: 752px) {
+  .content {
+    width: calc(100% - 4rem);
+  }
+}
